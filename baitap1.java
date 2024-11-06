@@ -9,19 +9,19 @@ public class GuessNumberGame {
         int randomNumber = random.nextInt(50) + 1;  // Số ngẫu nhiên từ 1 đến 50
         int guess = 0;
         
-        System.out.println("Chào mừng bạn đến với trò chơi đoán số!");
-        System.out.println("Hãy đoán một số từ 1 đến 50:");
+        System.out.println("Chao mung ban den voi tro choi dem so!");
+        System.out.println("Hay doan mot so tu 1 den 50:");
         
         while (guess != randomNumber) {
-            System.out.print("Nhập số của bạn: ");
+            System.out.print("Nhap so cua ban: ");
             guess = scanner.nextInt();
             
             if (guess < randomNumber) {
-                System.out.println("Số của bạn thấp hơn. Hãy đoán số lớn hơn.");
+                System.out.println("So cua ban thap hon. Hay doan so lon hon.");
             } else if (guess > randomNumber) {
-                System.out.println("Số của bạn cao hơn. Hãy đoán số nhỏ hơn.");
+                System.out.println("So cua ban cao hon. Hay doan so nho hon.");
             } else {
-                System.out.println("Chúc mừng! Bạn đã đoán đúng số " + randomNumber);
+                System.out.println("Chuc mung! Ban da doan trung so " + randomNumber);
             }
         }
         
